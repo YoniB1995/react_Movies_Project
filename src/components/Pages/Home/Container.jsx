@@ -16,7 +16,7 @@ function Container(){
 const names = ["Black Panther","MoonLight","King KONG","Avengers EndGame","Se7en","Project Power","1917","Black Mirror","21 Bridges","Joker"]
     return(
         <div className="cards">
-   {posters.map((item,index)=>(<Card name={names[index]} img={item} />))}
+   {posters.map((item,index)=>(<Card name={names[index]} img={item} alt="" key={index} />))}
             
         
         </div>

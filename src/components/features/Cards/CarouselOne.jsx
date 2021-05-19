@@ -18,12 +18,12 @@ return(
   <Carousel.Item>
     <img
       className="slide_Img"
-      src="images/posterFour.jpeg"
+      src="images/posterTwo.jpeg"
       alt="Second slide"
     />
 
     <Carousel.Caption>
-      <h3>AVENGERS</h3>
+      <h3>MOONLIGHT</h3>
       <p>In The Cinema.</p>
     </Carousel.Caption>
   </Carousel.Item>
