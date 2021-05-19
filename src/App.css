@@ -3,9 +3,12 @@
   padding: 0;
   box-sizing: border-box;
   font-size: 20px;
-  font-family: sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
-
+.loader {
+  height: 150px;
+  width: 200px;
+}
 .App {
   text-align: center;
 }
@@ -110,8 +113,13 @@
 }
 #containerBody {
   height: 50%;
-  background-color: #333;
+  background-color: rgb(0, 0, 0);
 }
+.slide_Img {
+  height: 500px;
+  width: 500px;
+}
+
 .cards {
   display: flex;
   justify-content: center;
@@ -127,7 +135,7 @@
   align-items: center;
   position: relative;
   height: 40vh;
-
+  color: wheat;
   background: radial-gradient(
     circle,
     rgba(8, 132, 238, 1) 14%,
@@ -157,7 +165,11 @@
 }
 
 .footer_web {
-  background-color: black;
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 1) 32%,
+    rgba(233, 19, 34, 1) 79%
+  );
   color: white;
   height: 100%;
   display: flex;
