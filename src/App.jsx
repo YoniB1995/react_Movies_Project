@@ -23,10 +23,10 @@ function App() {
   //     show = false;
   //      setCards(movieCards);
        
-  //   }
-    
+  //   }  
   // }
-  
+
+ 
   return (
     <div className="App">
       <header className="header_web">
@@ -35,11 +35,12 @@ function App() {
       </header>
       
       <section id="containerBody">
+        
         <CarouselOne/>
         <Container/>
         {/* {loaderGIF}
         {cards} */}
-        <button>Test</button>
+        {/* <button>Test</button> */}
         <aside></aside>
       </section>
       <footer className="footer_web">

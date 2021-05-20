@@ -6,7 +6,7 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 /* ===============================================================*/
-.Juda,
+/* .Juda,
 .Yoni,
 .Yoav,
 .Dani,
@@ -20,9 +20,9 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-}
+} */
 
-.Juda {
+/* .Juda {
   background: blue;
 }
 .Yoni {
@@ -36,10 +36,10 @@
 }
 .Juda {
   background: rgb(7, 226, 197);
-}
-.bodyJacob {
+} */
+/* .bodyJacob {
   display: flex;
-}
+} */
 /* ===============================================================*/
 
 .loader {
@@ -50,8 +50,6 @@
   text-align: center;
   display: flex;
   justify-content: center;
-  align-items: center;
-  align-content: center;
   flex-direction: column;
 }
 .header_web {
@@ -61,7 +59,7 @@
     rgba(252, 70, 107, 1) 100%
   );
   display: flex;
-  position: relative;
+  /* position: relative; */
 }
 .header_movies {
   justify-content: center;
