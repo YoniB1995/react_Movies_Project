@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-size: 20px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 /* ===============================================================*/
 /* .Juda,
@@ -42,7 +42,7 @@
 } */
 /* ===============================================================*/
 
-.loader {
+.loaderMain {
   height: 150px;
   width: 200px;
 }
@@ -59,59 +59,24 @@
     rgba(252, 70, 107, 1) 100%
   );
   display: flex;
-  /* position: relative; */
+  justify-content: space-between;
+  position: relative;
 }
-.header_movies {
+
+.imgLogo {
+  display: flex;
+}
+/* .header_movies {
   justify-content: center;
   align-self: center;
   height: 20vh;
   display: flex;
   padding: 10vh;
-  left: -20vh;
+  left: 10%;
   top: 5vh;
-  position: relative;
-  animation-name: moveLogo;
-  animation-duration: 30s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-delay: none;
-  animation-timing-function: ease-in-out;
-}
-
-@keyframes moveLogo {
-  0% {
-    left: -20vh;
-    top: 5vh;
-  }
-  45% {
-    left: -160vh;
-    top: 5vh;
-  }
-  90% {
-    left: -20vh;
-    top: 5vh;
-  }
-}
-
-.header_nav {
-  background-color: black;
-  color: white;
   position: absolute;
-  display: inline-flex;
-  flex-direction: row;
-}
+} */
 
-.header_nav .nav1,
-.nav2,
-.nav3,
-.nav4,
-.nav0 {
-  font-style: inherit;
-  font-weight: bold;
-  padding: 8px;
-  height: 100%;
-  list-style: none;
-}
 .header_nav .nav1:hover,
 .nav2:hover,
 .nav3:hover,
@@ -121,14 +86,6 @@
   cursor: pointer;
   transform: scale(0.98);
   transition: ease-in-out 0.3s;
-}
-
-.imgLogo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-self: center;
-  position: absolute;
 }
 
 .card_HeaderLogo {
@@ -156,8 +113,11 @@
   background-color: rgb(0, 0, 0);
 }
 .slide_Img {
-  height: 500px;
-  width: 500px;
+  height: 100vh;
+  width: 100vh;
+}
+html {
+  scroll: smooth;
 }
 
 .cards {
@@ -178,14 +138,36 @@
   color: wheat;
   background: radial-gradient(
     circle,
-    rgba(8, 132, 238, 1) 14%,
+    rgba(233, 19, 34, 1) 15%,
     rgba(0, 0, 0, 1) 100%
   );
+  /* radial-gradient(
+    circle,
+    rgba(8, 132, 238, 1) 14%,
+    rgba(0, 0, 0, 1) 100%
+  ); */
   box-shadow: 2px 2px 2px 2px black;
   width: 40vh;
   height: 100;
   margin: 10px;
+  /* animation-name: autoCards;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-delay: 0s;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out; */
 }
+
+/* @keyframes autoCards {
+  from {
+    transform: scaleX(1);
+    transition: ease-in-out 0.3s;
+  }
+  to {
+    transform: scaleX(-1);
+    transition: ease-in-out 0.3s;
+  }
+} */
 .cardTicket:hover {
   opacity: 0.7;
   background-color: brown;
@@ -194,10 +176,6 @@
   transition: ease-in-out 0.3s;
 }
 
-.cardTicket:active {
-  transform: scaleX(-1);
-  transition: ease-in-out 0.3s;
-}
 .footerLogo {
   display: flex;
 

@@ -2,7 +2,7 @@ import React from 'react'
 import Card from '../../../components/features/Cards/Card'
 
 
-function Container(){
+function Container(props){
     const posters = ["images/posterOne.jpeg"
 ,"images/posterTwo.jpeg",
 "images/posterThree.jpeg",
@@ -12,10 +12,10 @@ function Container(){
 "images/posterSeven.jpg",
 "images/posterEight.jpg",
 "images/posterNine.jpeg",
-"images/posterTen.jpg"];
-const names = ["Black Panther","MoonLight","King KONG","Avengers EndGame","Se7en","Project Power","1917","Black Mirror","21 Bridges","Joker"]
+"images/posterTen.jpg","images/posterEleven.jpg"];
+const names = ["Black Panther","MoonLight","King KONG","Avengers EndGame","Se7en","Project Power","1917","Black Mirror","21 Bridges","Joker","Avatar"]
     return(
-        <div className="cards">
+        <div className="cards" style={props.condition? props.style : null}>
    {posters.map((item,index)=>(<Card name={names[index]} img={item} alt="" key={index} />))}
             
         

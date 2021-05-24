@@ -1,6 +1,7 @@
 import React from 'react';
-import Navbar from '../Navbar/Navbar'
-import SearchAppBar from '../Navbar/SearchAppBar'
+// import Navbar from '../Navbar/Navbar'
+// import SearchAppBar from '../Navbar/SearchAppBar'
+import NavTest from '../Navbar/Navbar'
 
 
 function Header(){
@@ -8,9 +9,10 @@ function Header(){
     // const {name , lastName, Age} = props
     return(
         <>
-        <SearchAppBar/>
-        <div className="header_movies">  
+        <NavTest/>
         <img src={img} className="imgLogo"></img>
+        <div className="header_movies">  
+        
         </div>
         
         </>
